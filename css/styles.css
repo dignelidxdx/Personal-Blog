@@ -1,0 +1,111 @@
+:root{
+    /* Colors */
+    --rose-color: #c33c5b;
+}
+
+* {
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+    display: inline;
+    color: black;
+}
+header {
+    width: 100%;
+    height: 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+header .header-icons-container {
+    width: 100%;
+    height: 50px;
+    display: grid;
+    background-color: var(--rose-color);
+
+}
+header .header-icons-container .icons {
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: end;
+    margin-right: 50px;
+}
+header .icons img {
+    width: 30px;
+}
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+nav .nav-logo-container {
+    margin-left: 50px;
+}
+nav .nav-logo-container img {
+    width: 220px;
+    margin-top: 10px;
+}
+nav .profile-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+nav .profile-link a {
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.main {
+    background: url("/images/Background/Cover.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.main-principal {
+    justify-content: center;
+    align-items: center;
+}
+.main-text {
+    display: flex;
+    justify-content: center;    
+}
+.main-text h3 {
+    margin-top: 80px;
+    font-size: 30px;
+    font-weight: 700px;
+    letter-spacing: 10px;
+    color: white;
+}
+.main-text,
+.main-button {
+    margin-top: 140px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.main-button button {
+    width: 150px;
+    height: 50px;
+    background-color: var(--rose-color);
+    border-color: var(--rose-color);
+    border-bottom: none;
+    border-right: none;
+    border-radius: 10px;
+}
